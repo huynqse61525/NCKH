@@ -1,0 +1,76 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[utf8]{vietnam}
+\usepackage{amsmath, amsthm, amssymb,latexsym,amscd,amsfonts,enumerate}
+\usepackage[top=3.5cm, bottom=3.0cm, left=3.5cm, right=2.0cm]{geometry}  % căn lề theo quy chuẩn KLTN
+\usepackage{color, fancyhdr, graphicx, wrapfig}
+\usepackage[unicode]{hyperref}
+\usepackage{minitoc}
+
+\pagenumbering{roman}\pagestyle{plain}
+\pagestyle{fancy}
+\lhead{\it Khóa luận tốt nghiệp}
+\rhead{\it Sơ đồ chia sẻ bí mật và ứng dụng}
+\lfoot{\it Nguyễn Quang Huy} 			         
+\rfoot{\it KHMT8B CNTT ĐHCNT}
+\renewcommand{\headrulewidth}{1,2pt} 			
+\renewcommand{\footrulewidth}{1,2pt}  
+
+\begin{document}
+
+\fontsize{13pt}{18pt}\selectfont
+\setlength{\baselineskip}{18truept}
+
+\begin{titlepage}
+	\begin{center}
+		{\large\bf BỘ CÔNG THƯƠNG}\\
+		{\large\bf TRƯỜNG ĐẠI HỌC CÔNG NGHIỆP \\
+			THÀNH PHỐ HỒ CHÍ MINH}\\
+		{\large\bf KHOA CÔNG NGHỆ THÔNG TIN} \\
+		{---------------------o0o--------------------}
+		\vskip 4cm
+		{\bf KHÓA LUẬN TỐT NGHIỆP}\\[1cm]
+		{\Large\bf \textbf{SƠ ĐỒ CHIA SẺ BÍ MẬT VÀ ỨNG DỤNG}}\\
+		\vskip 1cm
+		{\bf {\it Chuyên ngành:} KHOA HỌC MÁY TÍNH}
+		\vskip 5cm
+		
+		\begin{tabular}{r l}
+		Giảng viên hướng dẫn:&{\bf PGS.TS XYZ}\\[0.5cm]
+		Sinh viên:&{\bf NGUYỄN QUANG HUY}\\[0.5cm]
+		Lớp:&{\bf KHOA HỌC MÁY TÍNH }
+		\end{tabular}
+	\vfill
+	{\bf HỒ CHÍ MINH, 12/2019}
+	\end{center}
+\end{titlepage}
+
+\chapter*{Lời nói đầu}
+\addcontentsline{toc}{chapter}{{\bf  Lời nói đầu}\rm} %Đưa lời nói đầu vào mục lục
+Thế giới của chúng ta luôn sôi sục trong muôn vàn biến động được tạo ra bởi con người. Và trong thế kỷ 20, máy tính là một trong những sản phẩm vĩ đại nhất. Cùng với thời gian, người ta không muốn sử dụng một máy tính đơn lẻ nữa mà sẽ kết nối các máy này lại thành một mạng máy tính nhằm tăng khả năng làm việc, hiểu biết, trao đổi, cập nhật các thông tin….Mạng Internet là xu hướng phát triển của thế giới ngày nay. Hiện nay Internet đã trở nên rất phổ biến trên toàn thế giới. Thông qua mạng Internet  mọi người có thể trao đổi thông tin với nhau một cách nhanh chóng thuận tiện.Khi một người muốn trao đổi thông tin với một người hay một tổ chức nào đó thông qua mạng máy tính thì yêu cầu quan trọng là làm sao để đảm bảo thông tin không bị sai lệch hoặc bị lộ do sự xâm nhập của kẻ thứ ba. Trước các yêu cầu cần thiết đó, lý thuyết về mật mã thông tin đã ra đời nhằm đảm bảo tính an toàn dữ liệu tại nơi lưu trữ cũng như khi dữ liệu được truyền trên mạng. \\
+Trong các hệ mật mã, khoá là vấn đề rất quan trọng. Ở đây chúng ta sẽ nghiên cứu các vấn đề về tạo khoá cho người dùng trong bảo mật dữ liệu. Mô hình server tạo khoá giải quyết các công việc như quản lý và phân phối khóa một cách an toàn, hiệu quả. Quản trị khoá là một vấn đề rất rộng trong mật mã học. Nó bao gồm mã hoá khoá trước khi truyền. Liên quan đến việc truyền khoá là vấn đề xác định danh tính cho người dùng, ký điện tử.\\
+Ngành mật mã học vẫn đang phát triển không ngừng. Trong thời đại mọi thông tin đều mang giá trị thì việc bảo mật thông tin càng trở nên có ý nghĩa. Để có một cơ sở hạ tầng tốt nhằm xây dựng các hệ thống bảo mật thì mọi nghiên cứu liên quan đến bảo mật và mã hoá đều cần phải có những nỗ lực lớn và đòi hỏi sự làm việc nghiêm túc và thử nghiệm kỹ càng. Trong khuôn khổ khoá luận này, em chỉ tập trung vào một vấn đề nhỏ là truyền khoá bí mật và chia sẻ khoá bí mật đồng thời tìm ra các ứng dụng thực tế cho cơ sở lý thuyết đó.
+\tableofcontents
+\dominitoc
+\chapter{CHƯƠNG 1: CÁC KHÁI NIỆM VÀ THUẬT TOÁN CƠ BẢN}
+\minitoc
+\pagenumbering{arabic} 
+\section{Lý thuyết toán học modulo }
+\subsection{Hàm phi Euler}
+\subsection{Đồng dư thức}
+\subsection{Không gian Zn}
+\section{Vấn đề mã hoá}
+\subsection{Mã hoá đối xứng}
+\subsection{Mã hoá không đối xứng}
+\section{Các cách tạo khoá}
+\section{Phân phối khoá}
+\chapter{CHƯƠNG 2: ỨNG DỤNG CHIA SẺ BÍ MẬT}
+\chapter*{Kết luận}
+\addcontentsline{toc}{chapter}{{\bf  Kết luận}\rm}
+\chapter*{Phụ lục}
+\addcontentsline{toc}{chapter}{{\bf  Phụ lục}\rm}
+\chapter*{Tài liệu tham khảo}
+\addcontentsline{toc}{chapter}{{\bf  Tài liệu tham khảo}\rm}
+
+
+
+\end{document} 
