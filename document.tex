@@ -5,25 +5,16 @@
 \usepackage{color, fancyhdr, graphicx, wrapfig}
 \usepackage[unicode]{hyperref}
 \usepackage{minitoc}
-
-\newtheorem{dn}{Định nghĩa}[section]
-\newtheorem{tc}[dn]{Tính chất}
-
-\pagenumbering{roman}\pagestyle{plain}
-\pagestyle{fancy}
-\lhead{\it Khóa luận tốt nghiệp}
-\rhead{\it Sơ đồ chia sẻ bí mật và ứng dụng}
-\lfoot{\it Nguyễn Quang Huy} 			         
-\rfoot{\it KHMT8B CNTT ĐHCNT}
-\renewcommand{\headrulewidth}{1,2pt} 			
-\renewcommand{\footrulewidth}{1,2pt}  
+\usepackage{amsmath, amsfonts, amssymb}
+\usepackage{framed}
 
 \begin{document}
-
 \fontsize{13pt}{18pt}\selectfont
 \setlength{\baselineskip}{18truept}
+% TRANG BÌA
+\begin{framed}
+%\begin{titlepage}
 
-\begin{titlepage}
 	\begin{center}
 		{\large\bf BỘ CÔNG THƯƠNG}\\
 		{\large\bf TRƯỜNG ĐẠI HỌC CÔNG NGHIỆP \\
@@ -31,55 +22,60 @@
 		{\large\bf KHOA CÔNG NGHỆ THÔNG TIN} \\
 		{---------------------o0o--------------------}
 		\vskip 4cm
-		{\bf KHÓA LUẬN TỐT NGHIỆP}\\[1cm]
+		{\bf ĐỀ CƯƠNG LUẬN VĂN THẠC SĨ}\\[1cm]
+		\begin{flushleft}
+			{\bf {\underline{\textit{Đề tài}}:}}
+		\end{flushleft}
+		
 		{\Large\bf \textbf{SƠ ĐỒ CHIA SẺ BÍ MẬT VÀ ỨNG DỤNG}}\\
 		\vskip 1cm
 		{\bf {\it Chuyên ngành:} KHOA HỌC MÁY TÍNH}
 		\vskip 5cm
-		
-		\begin{tabular}{r l}
-		Giảng viên hướng dẫn:&{\bf PGS.TS XYZ}\\[0.5cm]
-		Sinh viên:&{\bf NGUYỄN QUANG HUY}\\[0.5cm]
-		Lớp:&{\bf KHOA HỌC MÁY TÍNH }
-		\end{tabular}
-	\vfill
-	{\bf HỒ CHÍ MINH, 12/2019}
+		\begin{flushleft}
+			Giảng viên hướng dẫn: \textbf{PGS.TS XYZ}\\[0.5cm]
+			Học viên: \textbf{NGUYỄN QUANG HUY}\\[0.5cm]
+			Lớp: \textbf{KHOA HỌC MÁY TÍNH} \\[0.5cm]
+		\end{flushleft}		
+	 HỒ CHÍ MINH, 12/2019
+
 	\end{center}
-\end{titlepage}
+%\end{titlepage}
+\end{framed}
+%KẾT THÚC TRANG BÌA
 
-\chapter*{Lời nói đầu}
-\addcontentsline{toc}{chapter}{{\bf  Lời nói đầu}\rm} %Đưa lời nói đầu vào mục lục
-Thế giới của chúng ta luôn sôi sục trong muôn vàn biến động được tạo ra bởi con người. Và trong thế kỷ 20, máy tính là một trong những sản phẩm vĩ đại nhất. Cùng với thời gian, người ta không muốn sử dụng một máy tính đơn lẻ nữa mà sẽ kết nối các máy này lại thành một mạng máy tính nhằm tăng khả năng làm việc, hiểu biết, trao đổi, cập nhật các thông tin….Mạng Internet là xu hướng phát triển của thế giới ngày nay. Hiện nay Internet đã trở nên rất phổ biến trên toàn thế giới. Thông qua mạng Internet  mọi người có thể trao đổi thông tin với nhau một cách nhanh chóng thuận tiện.Khi một người muốn trao đổi thông tin với một người hay một tổ chức nào đó thông qua mạng máy tính thì yêu cầu quan trọng là làm sao để đảm bảo thông tin không bị sai lệch hoặc bị lộ do sự xâm nhập của kẻ thứ ba. Trước các yêu cầu cần thiết đó, lý thuyết về mật mã thông tin đã ra đời nhằm đảm bảo tính an toàn dữ liệu tại nơi lưu trữ cũng như khi dữ liệu được truyền trên mạng. \\
-Trong các hệ mật mã, khoá là vấn đề rất quan trọng. Ở đây chúng ta sẽ nghiên cứu các vấn đề về tạo khoá cho người dùng trong bảo mật dữ liệu. Mô hình server tạo khoá giải quyết các công việc như quản lý và phân phối khóa một cách an toàn, hiệu quả. Quản trị khoá là một vấn đề rất rộng trong mật mã học. Nó bao gồm mã hoá khoá trước khi truyền. Liên quan đến việc truyền khoá là vấn đề xác định danh tính cho người dùng, ký điện tử.\\
+% KẾT THÚC TRANG MỤC LỤC
+% TRANG GIỚI THIỆU 1 - TỔNG 5 TRANG
+\chapter*{}
+\section*{1. Tên đề tài}
+		"Sơ đồ chia sẻ bí mật và ứng dụng "
+\section*{2. Lý do chọn đề tài}
+Thế giới của chúng ta luôn sôi sục trong muôn vàn biến động được tạo ra bởi con người. Và trong thế kỷ 20, máy tính là một trong những sản phẩm vĩ đại nhất. Cùng với thời gian, người ta không muốn sử dụng một máy tính đơn lẻ nữa mà sẽ kết nối các máy này lại thành một mạng máy tính nhằm tăng khả năng làm việc, hiểu biết, trao đổi, cập nhật các thông tin….Mạng Internet là xu hướng phát triển của thế giới ngày nay. Hiện nay Internet đã trở nên rất phổ biến trên toàn thế giới. Thông qua mạng Internet  mọi người có thể trao đổi thông tin với nhau một cách nhanh chóng thuận tiện. Những công ty phát triển và kinh doanh trên môi trường Internet/Intranet họ phải đối diện với những khó khăn lớn là làm thế nào để bảo vệ những dữ liệu quan trọng, ngăn chặn những hình thức tấn công, truy xuất dữ liệu bất hợp pháp từ bên trong (Intranet) lẫn bên ngoài (Internet). Khi một người muốn trao đổi thông tin với một người hay một tổ chức nào đó thông qua mạng máy tính thì yêu cầu quan trọng là làm sao để đảm bảo thông tin không bị sai lệch hoặc bị lộ do sự xâm nhập của kẻ thứ ba. Trước các yêu cầu cần thiết đó, lý thuyết về mật mã thông tin đã ra đời nhằm đảm bảo tính an toàn dữ liệu tại nơi lưu trữ cũng như khi dữ liệu được truyền trên mạng. 
+Trong các hệ mật mã, khoá là vấn đề rất quan trọng. Ở đây chúng ta sẽ nghiên cứu các vấn đề về tạo khoá cho người dùng trong bảo mật dữ liệu. Mô hình server tạo khoá giải quyết các công việc như quản lý và phân phối khóa một cách an toàn, hiệu quả. Quản trị khoá là một vấn đề rất rộng trong mật mã học. Nó bao gồm mã hoá khoá trước khi truyền. Liên quan đến việc truyền khoá là vấn đề xác định danh tính cho người dùng, ký điện tử. 
+Khoá luận này tập trung vào nghiên cứu các khái niệm cơ bản, cơ sở lý thuyết toán học modulo sử dụng trong bảo mật thông tin, các phương pháp phân phối khoá và các cách tạo khoá. Đặc biệt là áp dụng các sơ đồ chia sẻ bí mật vào việc quản lý các khóa bí mật.
+Vấn đề chia sẻ bí mật được đã được nghiên cứu từ những năm 70. Ý tưởng chính của chia sẻ bí mật dựa trên nguyên tắc đơn giản là không tin vào bất cứ ai. Một thông tin nào đó để đảm bảo an toàn thì ta không thể trao nó cho một người nắm giữ mà phải chia nhỏ thành các mảnh và chỉ trao cho mỗi người một hoặc một số mảnh sao cho một người với một số mảnh mình có không thể tìm ra thông tin bí mật. Việc phân chia các mảnh phải theo một sơ đồ chia sẻ bí mật nhất định thì mới có thể khôi phục lại thông tin bí mật. 
 Ngành mật mã học vẫn đang phát triển không ngừng. Trong thời đại mọi thông tin đều mang giá trị thì việc bảo mật thông tin càng trở nên có ý nghĩa. Để có một cơ sở hạ tầng tốt nhằm xây dựng các hệ thống bảo mật thì mọi nghiên cứu liên quan đến bảo mật và mã hoá đều cần phải có những nỗ lực lớn và đòi hỏi sự làm việc nghiêm túc và thử nghiệm kỹ càng. Trong khuôn khổ khoá luận này, em chỉ tập trung vào một vấn đề nhỏ là truyền khoá bí mật và chia sẻ khoá bí mật đồng thời tìm ra các ứng dụng thực tế cho cơ sở lý thuyết đó.
-\tableofcontents
-\dominitoc
-\chapter{CHƯƠNG 1: CÁC KHÁI NIỆM VÀ THUẬT TOÁN CƠ BẢN}
-\minitoc
-\pagenumbering{arabic} 
-\section{Lý thuyết toán học modulo }
-\subsection{Hàm phi Euler}
 
-	\begin{dn}
-	Cho được định nghĩa là số các số nguyên trong khoảng từ  nguyên tố cùng nhau với n. Hàm  được gọi là hàm phi Euler 
-	
-	\end{dn}
-
-
-\subsection{Đồng dư thức}
-\subsection{Không gian Zn}
-\section{Vấn đề mã hoá}
-\subsection{Mã hoá đối xứng}
-\subsection{Mã hoá không đối xứng}
-\section{Các cách tạo khoá}
-\section{Phân phối khoá}
-\chapter{CHƯƠNG 2: ỨNG DỤNG CHIA SẺ BÍ MẬT}
-\chapter*{Kết luận}
-\addcontentsline{toc}{chapter}{{\bf  Kết luận}\rm}
-\chapter*{Phụ lục}
-\addcontentsline{toc}{chapter}{{\bf  Phụ lục}\rm}
+\section*{3. Mục tiêu nghiên cứu}
+\section*{4. Đối tượng và phạm vi nghiên cứu}
+\section*{5. Nội dung, địa điểm, vật liệu và phương pháp nghiên cứu}
+	\subsection*{5.1 Nội dung nghiên cứu}
+	\subsection*{5.2 Phương pháp nghiên cứu}
+		\subsubsection*{5.2.1 Thời gian nghiên cứu.}
+		\subsubsection*{5.2.2 Địa  điểm nghiên cứu}
+		\subsubsection*{5.2.3 Vật liệu nghiên cứu }
+		\subsubsection*{5.2.4 Phương pháp nghiên cứu}
+		\subsubsection*{5.2.5 Phương pháp xử lý số liệu}
+\section*{6. Dự kiến kết quả}
+	\subsection*{Nghiên cứu  lý thuyết}
+	\subsection*{Nghiên cứu thực tiễn}
+\section*{7. Kế hoạch thực hiện}
+\section*{8. Kết cấu chi tiết các chương của luận văn}
 \chapter*{Tài liệu tham khảo}
-\addcontentsline{toc}{chapter}{{\bf  Tài liệu tham khảo}\rm}
+
+
+
+% KẾT THÚC 5 TRANG GIỚI THIỆU
+
 
 
 
