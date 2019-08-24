@@ -7,35 +7,41 @@
 \usepackage{minitoc}
 \usepackage{amsmath, amsfonts, amssymb}
 \usepackage{framed}
+\usepackage{graphicx}
 
 \begin{document}
-\fontsize{13pt}{18pt}\selectfont
+\fontsize{12pt}{18pt}\selectfont
 \setlength{\baselineskip}{18truept}
 % TRANG BÌA
 \begin{framed}
 %\begin{titlepage}
 
 	\begin{center}
-		{\large\bf BỘ CÔNG THƯƠNG}\\
+		{\large BỘ CÔNG THƯƠNG}\\
 		{\large\bf TRƯỜNG ĐẠI HỌC CÔNG NGHIỆP \\
 			THÀNH PHỐ HỒ CHÍ MINH}\\
-		{\large\bf KHOA CÔNG NGHỆ THÔNG TIN} \\
-		{---------------------o0o--------------------}
-		\vskip 4cm
+	
+		{---------------------o0o--------------------}\\[0.5cm]
+		\includegraphics{logo}
+		\vskip 2cm
 		{\bf ĐỀ CƯƠNG LUẬN VĂN THẠC SĨ}\\[1cm]
 		\begin{flushleft}
 			{\bf {\underline{\textit{Đề tài}}:}}
 		\end{flushleft}
-		
+	
+		\fontsize{20pt}{18pt}\selectfont
 		{\Large\bf \textbf{SƠ ĐỒ CHIA SẺ BÍ MẬT VÀ ỨNG DỤNG}}\\
 		\vskip 1cm
+		\fontsize{14pt}{18pt}\selectfont
 		{\bf {\it Chuyên ngành:} KHOA HỌC MÁY TÍNH}
 		\vskip 5cm
 		\begin{flushleft}
 			Giảng viên hướng dẫn: \textbf{PGS.TS XYZ}\\[0.5cm]
 			Học viên: \textbf{NGUYỄN QUANG HUY}\\[0.5cm]
 			Lớp: \textbf{KHOA HỌC MÁY TÍNH} \\[0.5cm]
-		\end{flushleft}		
+		\end{flushleft}	
+	
+	\fontsize{12pt}{18pt}\selectfont	
 	 HỒ CHÍ MINH, 12/2019
 
 	\end{center}
@@ -45,38 +51,65 @@
 
 % KẾT THÚC TRANG MỤC LỤC
 % TRANG GIỚI THIỆU 1 - TỔNG 5 TRANG
-\chapter*{}
 \section*{1. Tên đề tài}
 		"Sơ đồ chia sẻ bí mật và ứng dụng "
 \section*{2. Lý do chọn đề tài}
 Thế giới của chúng ta luôn sôi sục trong muôn vàn biến động được tạo ra bởi con người. Và trong thế kỷ 20, máy tính là một trong những sản phẩm vĩ đại nhất. Cùng với thời gian, người ta không muốn sử dụng một máy tính đơn lẻ nữa mà sẽ kết nối các máy này lại thành một mạng máy tính nhằm tăng khả năng làm việc, hiểu biết, trao đổi, cập nhật các thông tin….Mạng Internet là xu hướng phát triển của thế giới ngày nay. Hiện nay Internet đã trở nên rất phổ biến trên toàn thế giới. Thông qua mạng Internet  mọi người có thể trao đổi thông tin với nhau một cách nhanh chóng thuận tiện. Những công ty phát triển và kinh doanh trên môi trường Internet/Intranet họ phải đối diện với những khó khăn lớn là làm thế nào để bảo vệ những dữ liệu quan trọng, ngăn chặn những hình thức tấn công, truy xuất dữ liệu bất hợp pháp từ bên trong (Intranet) lẫn bên ngoài (Internet). Khi một người muốn trao đổi thông tin với một người hay một tổ chức nào đó thông qua mạng máy tính thì yêu cầu quan trọng là làm sao để đảm bảo thông tin không bị sai lệch hoặc bị lộ do sự xâm nhập của kẻ thứ ba. Trước các yêu cầu cần thiết đó, lý thuyết về mật mã thông tin đã ra đời nhằm đảm bảo tính an toàn dữ liệu tại nơi lưu trữ cũng như khi dữ liệu được truyền trên mạng. 
-Trong các hệ mật mã, khoá là vấn đề rất quan trọng. Ở đây chúng ta sẽ nghiên cứu các vấn đề về tạo khoá cho người dùng trong bảo mật dữ liệu. Mô hình server tạo khoá giải quyết các công việc như quản lý và phân phối khóa một cách an toàn, hiệu quả. Quản trị khoá là một vấn đề rất rộng trong mật mã học. Nó bao gồm mã hoá khoá trước khi truyền. Liên quan đến việc truyền khoá là vấn đề xác định danh tính cho người dùng, ký điện tử. 
-Khoá luận này tập trung vào nghiên cứu các khái niệm cơ bản, cơ sở lý thuyết toán học modulo sử dụng trong bảo mật thông tin, các phương pháp phân phối khoá và các cách tạo khoá. Đặc biệt là áp dụng các sơ đồ chia sẻ bí mật vào việc quản lý các khóa bí mật.
+\\Trong các hệ mật mã, khoá là vấn đề rất quan trọng. Ở đây chúng ta sẽ nghiên cứu các vấn đề về tạo khoá cho người dùng trong bảo mật dữ liệu. Mô hình server tạo khoá giải quyết các công việc như quản lý và phân phối khóa một cách an toàn, hiệu quả. Quản trị khoá là một vấn đề rất rộng trong mật mã học. Nó bao gồm mã hoá khoá trước khi truyền. Liên quan đến việc truyền khoá là vấn đề xác định danh tính cho người dùng, ký điện tử. 
+\\Khoá luận này tập trung vào nghiên cứu các khái niệm cơ bản, cơ sở lý thuyết toán học modulo sử dụng trong bảo mật thông tin, các phương pháp phân phối khoá và các cách tạo khoá. Đặc biệt là áp dụng các sơ đồ chia sẻ bí mật vào việc quản lý các khóa bí mật.
 Vấn đề chia sẻ bí mật được đã được nghiên cứu từ những năm 70. Ý tưởng chính của chia sẻ bí mật dựa trên nguyên tắc đơn giản là không tin vào bất cứ ai. Một thông tin nào đó để đảm bảo an toàn thì ta không thể trao nó cho một người nắm giữ mà phải chia nhỏ thành các mảnh và chỉ trao cho mỗi người một hoặc một số mảnh sao cho một người với một số mảnh mình có không thể tìm ra thông tin bí mật. Việc phân chia các mảnh phải theo một sơ đồ chia sẻ bí mật nhất định thì mới có thể khôi phục lại thông tin bí mật. 
 Ngành mật mã học vẫn đang phát triển không ngừng. Trong thời đại mọi thông tin đều mang giá trị thì việc bảo mật thông tin càng trở nên có ý nghĩa. Để có một cơ sở hạ tầng tốt nhằm xây dựng các hệ thống bảo mật thì mọi nghiên cứu liên quan đến bảo mật và mã hoá đều cần phải có những nỗ lực lớn và đòi hỏi sự làm việc nghiêm túc và thử nghiệm kỹ càng. Trong khuôn khổ khoá luận này, em chỉ tập trung vào một vấn đề nhỏ là truyền khoá bí mật và chia sẻ khoá bí mật đồng thời tìm ra các ứng dụng thực tế cho cơ sở lý thuyết đó.
 
 \section*{3. Mục tiêu nghiên cứu}
+Nghiên cứu các khái niệm chia sẻ bí mật, đặc biệt là các sơ đồ chia sẻ bí mật nổi tiếng như sơ đồ ngưỡng Shamir, cấu trúc mạch đơn điệu, cấu trúc không gian vectơ Brickell. Qua đó, tìm ra ưu nhược điểm của từng sơ đồ, từ đó tự tin lựa chọn một sơ đồ thích hợp hơn cả cho việc ứng dụng vào hai bài toán nêu trên.
 \section*{4. Đối tượng và phạm vi nghiên cứu}
+Đối tượng nghiên cứu: sơ đồ chia sẻ bí mật
+\\Phạm vi nghiên cứu: tìm ra ưu nhược điềm cùa sơ đồ ngưỡng Shamir, cấu trúc mạch đơn điệu, cấu trúc không gian vectơ Brickell từ đó lựa chọn sơ đồ thích hợp cho việc ứng dụng thực tế.
 \section*{5. Nội dung, địa điểm, vật liệu và phương pháp nghiên cứu}
 	\subsection*{5.1 Nội dung nghiên cứu}
+- Tìm hiểu tổng quan về các công trình nghiên cứu có liên quan và các thành tựu, hạn chế đã được hoàn thành trước đây.
+\\- Tìm hiểu các khái niệm cơ bản trong an toàn dữ liệu: mã hoá dữ liệu, chữ ký điện tử, phân phối khoá và thoả thuận khoá, các sơ đồ chia sẻ bí mật. 
+\\- Nghiên cứu và sử dụng các kỹ thuật xử lý số lớn trong không gian modulo, các phương pháp truyền khoá an toàn. 
+\\- Hiện thực và đánh giá kết quả.
+
 	\subsection*{5.2 Phương pháp nghiên cứu}
 		\subsubsection*{5.2.1 Thời gian nghiên cứu.}
+	Ngày 01/01/2020 đến ngày 31/07/2020.
 		\subsubsection*{5.2.2 Địa  điểm nghiên cứu}
+	Nghiên cứu được thực hiện tại trường Đại học Công nghiệp Thành Phố Hồ Chí Minh và tại phòng làm việc của nhà riêng.
 		\subsubsection*{5.2.3 Vật liệu nghiên cứu }
+	Máy tính, các nguồn thông tin thu thập từ truy cập mạng Internet, tài liệu tham khảo.
 		\subsubsection*{5.2.4 Phương pháp nghiên cứu}
+	Phương pháp nghiên cứu dựa trên tài liệu: Thu thập, phân tích, xử lý thông tin dựa trên các tài liệu như sách, báo, tạp chí,…đã in ấn hoặc công bố trên internet liên quan đến đề tài.
+	\\Phương pháp nghiên cứu dựa trên thực nghiệm: Thông qua việc thử nghiệm trên dữ liệu kết quả và đối sánh với các kết quả đã công  bố.
+	\\	Báo cáo định kỳ cho thầy hướng dẫn, sửa chữa nghiên cứu theo hướng dẫn của thầy.
+		
 		\subsubsection*{5.2.5 Phương pháp xử lý số liệu}
 \section*{6. Dự kiến kết quả}
-	\subsection*{Nghiên cứu  lý thuyết}
-	\subsection*{Nghiên cứu thực tiễn}
+	 Áp dụng triển khai được sơ đồ chia sẻ bí mật đang nghiên cứu.
+\\	 Hoàn thành luận văn theo mẫu quy định.
+	
 \section*{7. Kế hoạch thực hiện}
 \section*{8. Kết cấu chi tiết các chương của luận văn}
-\chapter*{Tài liệu tham khảo}
 
-
+\begin{thebibliography}{99}
+	\bibitem{pdd} Phan Đình Diệu, \textit{Lý thuyết mật mã và an toàn thông tin}, 1999.
+	\bibitem{Sha} A. Shamir, \textit{How to share a secret}, November, 1979.
+	\bibitem{MOV} A. Menezes, P. van Oorschot, S. Vanstone, CRC Press 1996 , \textit{Handbook of Applied Cryptography}, \url{http://www.Cacr. Math.uwaterloo.ca}.
+	\bibitem{Ro}Kenneth H. Rosen, \textit{The CRC Press Series on Discrete Mathematics and Its Application}.
+	\bibitem{GHO}Hossein Ghodosi, Josef Pireprzyk, Rei Safavi – Naini, Huaxiong Wang, \textit{On Construction of Cumulative Secret Sharing schemes}, Centre for Computer Security Research, School of Information Technology and Computer Science, University of Wollongong, Australia .
+\end{thebibliography}
 
 % KẾT THÚC 5 TRANG GIỚI THIỆU
-
-
-
-
 \end{document} 
+
+
+% PHẦN TÀI LIỆU THAM KHẢO 
+
+
+
+	
+
+% HẾT PHẦN TÀI LIỆU THAM KHẢO 
+
+
